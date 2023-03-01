@@ -1,0 +1,160 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link.current {
+  color: var(--accent-color);
+}
+.introduction {
+  font-style: normal;
+  background-color: var(--secondary-background-color);
+  justify-content: left;
+}
+.gmail-header {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.numero-header {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.panel {
+  color: var(--primary-background-color);
+  padding: 20px;
+}
+.button1 {
+  background-color: #2196f3;
+  color: var(--primary-background-color);
+}
+.textos-alineados {
+  justify-content: space-around;
+}
+.texto {
+  color: var(--secondary-text-color);
+}
+.titulo {
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.textos-alineados {
+  justify-content: space-around;
+}
+.botones-inicales {
+  justify-content: center;
+  color: var(--secondary-text-color);
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.button-current {
+  background-color: #2196f3;
+  color: var(--primary-background-color);
+}
+.top-button {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.caja-imagen {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  flex-direction: column;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+}
+.informacion {
+  color: var(--secondary-text-color);
+}
+.profesion {
+  color: var(--secondary-text-color);
+}
+
+.footer {
+  font-style: normal;
+  background-color: var(--secondary-background-color);
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-color {
+  color: var(--primary-background-color);
+}
+.gmail-footer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.numero-footer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
