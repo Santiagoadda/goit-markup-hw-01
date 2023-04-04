@@ -1,3 +1,3 @@
 ### Live Demo
 
-https://santiagoadda.github.io/goit-markup-hw-01/ gi
+https://santiagoadda.github.io/goit-markup-hw-01/

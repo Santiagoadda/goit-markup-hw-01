@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <title>Tarea #4</title>
+    <title>Tarea #5</title>
   </head>
   <body>
     <header class="header-border">
@@ -22,7 +22,11 @@
           <a href="#" class="logo">WebStudio</a>
           <ul class="nav-list list">
             <li>
-              <a href="./index.htm" class="nav-list-item active">Estudio</a>
+              <a
+                href="./index.html"
+                class="nav-list-item nav-list-item-line active"
+                >Estudio</a
+              >
             </li>
             <li>
               <a href="./portfolio.html" class="nav-list-item">Portafolio</a>
@@ -32,63 +36,67 @@
         </nav>
         <ul class="list-contac list">
           <li class="contact-icon">
-            <svg
-              height="12px"
-              width="16px"
-              left="1052px"
-              top="34px"
-              border-radius="0px"
-              color="#757575"
+            <a href="mailto:info@devstudio" class="list-item">
+              <svg height="12" width="16">
+                <use href="./images/icon.svg#icon-sobre-activable-2"></use>
+              </svg>
+              info@devstudio</a
             >
-              <use href="./images/icon.svg#icon-sobre-activable-2"></use>
-            </svg>
-            <a href="mailto:info@devstudio" class="list-item">info@devstudio</a>
           </li>
           <li class="contact-icon">
-            <svg
-              height="16px"
-              width=" 10px"
-              left="1243px"
-              top="32px"
-              border-radius="0px"
-              color="#757575"
+            <a href="tel:+525555296000" class="list-item">
+              <svg height="16" width="10">
+                <use href="./images/icon.svg#icon-Vector-11"></use>
+              </svg>
+              +52 55 5529 6000</a
             >
-              <use href="./images/icon.svg#icon-Vector-11"></use>
-            </svg>
-            <a href="tel:+525555296000" class="list-item">+52 55 5529 6000</a>
           </li>
         </ul>
       </div>
     </header>
     <main class="main">
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button data-modal-close class="closet">
+            <svg
+              height="11px"
+              width="11px"
+              left="4px"
+              top="3px"
+              border-radius="0px"
+            >
+              <use href="./images/icon.svg#icon-Vector-12-1"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="opacity">
         <section class="main-item">
           <h1>
             SOLUCIONES EFICACES PARA <br />
             SU NEGOCIO
           </h1>
-          <button type="button" class="btn-item">
+          <button data-modal-open type="button" class="btn-item">
             Solicite nuestro servicio
           </button>
         </section>
       </div>
+      <script src="./js/modal.js"></script>
       <section class="container item">
         <h2 style="display: none">nuestras ventanas</h2>
         <ul class="item-new">
           <li class="item-new-list">
-            <ul class="rect">
-              <li class="center-item">
-                <svg
-                  height="70px"
-                  width="65px"
-                  left="2px"
-                  top="0px"
-                  border-radius="0px"
-                >
-                  <use href="./images/icon.svg#icon-antena"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="rect">
+              <svg
+                height="70px"
+                width="65px"
+                left="2px"
+                top="0px"
+                border-radius="0px"
+              >
+                <use href="./images/icon.svg#icon-antena"></use>
+              </svg>
+            </div>
             <h3>ATENCIÓN A LOS DETALLES</h3>
             <p>
               Nos adentramos en todos los detalles y procesos de su negocio,
@@ -96,19 +104,17 @@
             </p>
           </li>
           <li class="item-new-list">
-            <ul class="rect">
-              <li class="center-item">
-                <svg
-                  height="69.99991607666016px"
-                  width="66.95755767822266px"
-                  left="1.50390625px"
-                  top="0px"
-                  border-radius="0px"
-                >
-                  <use href="./images/icon.svg#icon-reloj"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="rect">
+              <svg
+                height="69.99991607666016px"
+                width="66.95755767822266px"
+                left="1.50390625px"
+                top="0px"
+                border-radius="0px"
+              >
+                <use href="./images/icon.svg#icon-reloj"></use>
+              </svg>
+            </div>
             <h3>PUNTUALIDAD</h3>
             <p>
               Con nosotros, usted puede sentirse seguro y protegido. Un
@@ -117,19 +123,17 @@
             </p>
           </li>
           <li class="item-new-list">
-            <ul class="rect">
-              <li class="center-item">
-                <svg
-                  height="70px"
-                  width="70px"
-                  left="906px"
-                  top="794px"
-                  border-radius="0px"
-                >
-                  <use href="./images/icon.svg#icon-computadora"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="rect">
+              <svg
+                height="70px"
+                width="70px"
+                left="906px"
+                top="794px"
+                border-radius="0px"
+              >
+                <use href="./images/icon.svg#icon-computadora"></use>
+              </svg>
+            </div>
             <h3>PLANIFICACIÓN</h3>
             <p>
               Usted podrá observar y participar en cada fase del desarrollo y
@@ -137,19 +141,17 @@
             </p>
           </li>
           <li class="item-new-list">
-            <ul class="rect">
-              <li class="center-item">
-                <svg
-                  height="70px"
-                  width="70px"
-                  left="1206px"
-                  top="794px"
-                  border-radius="0px"
-                >
-                  <use href="./images/icon.svg#icon-astronauta"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="rect">
+              <svg
+                height="70px"
+                width="70px"
+                left="1206px"
+                top="794px"
+                border-radius="0px"
+              >
+                <use href="./images/icon.svg#icon-astronauta"></use>
+              </svg>
+            </div>
             <h3>TEGNOLOGÍA MODERNA</h3>
             <p>
               Usamos herramientas innovadoras para resolver las tareas
@@ -291,34 +293,46 @@
         <h2 class="icon-clienes">Clientes Regulares</h2>
         <ul class="flex-icon">
           <li class="icon-pad icon">
-            <svg class="m" height="52.82px" width="106px" ;>
-              <use href="./images/icon.svg#icon-Union-1"></use>
-            </svg>
+            <a href="#">
+              <svg class="m" height="52.82px" width="106px" ;>
+                <use href="./images/icon.svg#icon-Union-1"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-pad icon">
-            <svg height="52.82px" width="106px">
-              <use href="./images/icon.svg#icon-cuadro"></use>
-            </svg>
+            <a href="#">
+              <svg height="52.82px" width="106px">
+                <use href="./images/icon.svg#icon-cuadro"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-pad icon">
-            <svg height="52.82px" width="106px">
-              <use href="./images/icon.svg#icon-cafe"></use>
-            </svg>
+            <a href="#">
+              <svg height="52.82px" width="106px">
+                <use href="./images/icon.svg#icon-cafe"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-pad icon">
-            <svg height="52.82px" width="106px">
-              <use href="./images/icon.svg#icon-agua"></use>
-            </svg>
+            <a href="#">
+              <svg height="52.82px" width="106px">
+                <use href="./images/icon.svg#icon-agua"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-pad icon">
-            <svg height="52.82px" width="106px">
-              <use href="./images/icon.svg#icon-hojas"></use>
-            </svg>
+            <a href="#">
+              <svg height="52.82px" width="106px">
+                <use href="./images/icon.svg#icon-hojas"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-pad icon">
-            <svg height="52.82px" width="106px">
-              <use href="./images/icon.svg#icon-Objecto"></use>
-            </svg>
+            <a href="#">
+              <svg height="52.82px" width="106px">
+                <use href="./images/icon.svg#icon-Objecto"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
