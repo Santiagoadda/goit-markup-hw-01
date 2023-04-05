@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <title>Tarea #5</title>
+    <title>Tarea #6</title>
   </head>
   <body>
     <header class="header-border">
@@ -63,11 +63,71 @@
               width="11px"
               left="4px"
               top="3px"
-              border-radius="0px"
+              border-radius="5px"
             >
               <use href="./images/icon.svg#icon-Vector-12-1"></use>
             </svg>
           </button>
+          <h2 class="contac-modal">
+            Deje sus datos, nos contactaremos con usted
+          </h2>
+          <form name="formulary" autocomplete="on" novalidate>
+            <label class="nombre1" for="nombre"
+              >Nombre
+              <input
+                class="nombre"
+                type="text"
+                name="nombre"
+                id="nombre"
+                required
+              />
+              <svg class="usuario" width="12" height="12" color="#212121" ;>
+                <use href="./images/icon.svg#icon-Vector-13-1"></use>
+              </svg>
+            </label>
+            <label class="tel2" for="telefono"
+              >Telefono
+              <input
+                class="tel"
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+              />
+              <svg width="13" height="13" class="contact-tel">
+                <use href="./images/icon.svg#icon-Vector-14-1"></use>
+              </svg>
+            </label>
+            <label class="email1" for="email"
+              >E-mail
+              <input
+                class="email"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+              <svg width="15" height="12" class="email-correo">
+                <use href="./images/icon.svg#icon-Vector-15-1"></use>
+              </svg>
+            </label>
+            <label class="comentary1" for="comentary">Comentarios</label>
+            <textarea
+              class="comentary"
+              name="comentary"
+              id="comentary"
+              cols="59"
+              rows="6"
+              placeholder="Introduzca el texto"
+              required
+            ></textarea>
+            <input class="check" type="checkbox" name="check" id="check" />
+            <label class="check1" for="check"
+              >Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones</label
+            >
+            <button class="send" type="submit">Enviar</button>
+          </form>
         </div>
       </div>
       <div class="opacity">
@@ -384,6 +444,28 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div class="footer-icon">
+          <h2 class="foot-icon-form">SUSCRÍBASE al boletín informativo</h2>
+          <form class="border" action="">
+            <label for="email">
+              <input
+                class="Correo"
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                id="email"
+              />
+            </label>
+            <button class="enviar" type="submit">
+              <div class="suscrib">
+                Suscríbase
+                <svg Width="24" Height="24">
+                  <use href="./images/icon.svg#icon-enviar-cono-1"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
         </div>
       </address>
     </footer>
