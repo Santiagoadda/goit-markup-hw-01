@@ -1,0 +1,106 @@
+@mixin hover-focus() {
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+}
+@mixin hover-buttom() {
+  &:hover &:focus {
+    color: map-get($colors, 'foot');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin icon-li() {
+  &:hover {
+    background-color: map-get($colors, 'primary');
+    color: map-get($colors, 'foot');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin end-input() {
+  &:placeholder-shown {
+    position: absolute;
+    height: 50px;
+    width: 358px;
+    left: 870px;
+    padding-left: 16px;
+    border-radius: 4px;
+    background-color: map-get($colors, 'fondo');
+    border: 1px solid rgba($blancoA, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@mixin svg() {
+  svg {
+    width: 20px;
+    fill: currentColor;
+    margin-top: 11px;
+    margin-left: 9.5px;
+  }
+}
+@mixin list() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@mixin check() {
+  &:checked {
+    color: map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+}
+@mixin border() {
+  &:hover,
+  &:focus {
+    border: 1px solid map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+}
+@mixin icon() {
+  &--input:hover + &--mail,
+  &--input:focus + &--mail {
+    fill: map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin iconUsuary() {
+  &--input:hover + &--usuary,
+  &--input:focus + &--usuary {
+    fill: map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin iconContac() {
+  &--input:hover + &--contact,
+  &--imput:focus + &--contact {
+    fill: map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin section() {
+  &:hover {
+    color: map-get($colors, 'primary');
+    border: 1px solid map-get($colors, 'primary');
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin picture() {
+  &:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@mixin tex() {
+  &:hover &--text {
+    height: 75%;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

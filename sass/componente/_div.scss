@@ -1,0 +1,58 @@
+.div {
+  &__backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    background: rgba($negro, 0.2);
+    transition: 250ms;
+    z-index: 1;
+  }
+  &__closet {
+    position: absolute;
+    border-radius: 50px;
+    color: transparent;
+    height: 30px;
+    width: 30px;
+    left: 490px;
+    top: 9px;
+    z-index: 1;
+    color: map-get($colors, 'primary');
+    border: rgba($negro, 0.1);
+  }
+  &__contact {
+    position: absolute;
+    height: 23px;
+    width: 448px;
+    left: 40px;
+    top: 40px;
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__modal {
+    position: relative;
+    height: 581px;
+    width: 528px;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    background: map-get($colors, 'foot');
+    box-shadow: map-get($sombra1, 'modal' 'modal1' 'modal2');
+    transform: translate(-50%, -50%) scale(0.9);
+    padding: 40px;
+  }
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
