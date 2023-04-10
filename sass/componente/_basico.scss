@@ -1,0 +1,92 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: map-get($colors, 'nav-list');
+  font-size: 14px;
+  line-height: 1;
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+input,
+textarea,
+svg {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  @include list();
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+p {
+  color: map-get($colors, 'list-contac');
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+}
+h1 {
+  color: map-get($colors, 'foot');
+  font-size: 44px;
+  font-weight: 900;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  color: map-get($colors, 'nav-list');
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding-bottom: 50px;
+}
+h3 {
+  color: map-get($colors, 'nav-list');
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+svg {
+  fill: currentColor;
+}

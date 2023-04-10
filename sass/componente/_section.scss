@@ -1,0 +1,24 @@
+.section {
+  padding: 100px;
+  padding-left: 15px;
+  &__ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: map-get($colors, 'list-contac');
+  }
+  &__li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: map-get($colors, 'list-contac');
+    border: 1px solid rgba($blancoA2, 1);
+    height: 81px;
+    width: 170px;
+    left: 215px;
+    top: 2447px;
+    border-radius: 4px;
+    @include section();
+  }
+}

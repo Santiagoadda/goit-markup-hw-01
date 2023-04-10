@@ -1,0 +1,171 @@
+.form {
+  &__check {
+    position: absolute;
+    left: 50px;
+    right: 62.25%;
+    top: 433px;
+    bottom: 33.79%;
+    height: 15px;
+    width: 16px;
+    border-radius: 0px;
+    color: map-get($colors, 'primary');
+    @include check();
+  }
+  &__checkbox {
+    position: absolute;
+    width: 400.62px;
+    height: 24px;
+    left: 76px;
+    top: 428px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: map-get($colors, 'list-contac');
+  }
+  &__comentary {
+    position: absolute;
+    width: 70px;
+    height: 14px;
+    left: 40px;
+    top: 270px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: map-get($colors, 'list-contac');
+    &--textarea {
+      position: absolute;
+      left: 40px;
+      top: 289px;
+      padding-left: 40px;
+      background: map-get($colors, 'foot');
+      border-radius: 4px;
+      padding: 12px 16px;
+      border: 1px solid rgba($negro1, 0.2);
+      @include border();
+    }
+  }
+  &__email {
+    position: absolute;
+    width: 41px;
+    height: 14px;
+    left: 40px;
+    top: 205px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: map-get($colors, 'list-contac');
+    &--input {
+      position: absolute;
+      width: 448px;
+      height: 40px;
+      left: 0px;
+      top: 18px;
+      padding-left: 40px;
+      border: 1px solid rgba($negro1, 0.2);
+      border-radius: 4px;
+      @include border();
+    }
+    &--mail {
+      position: absolute;
+      left: 15px;
+      top: 32px;
+      z-index: 1;
+      fill: map-get($colors, 'nav-list');
+    }
+    @include icon();
+  }
+  &__name {
+    position: absolute;
+    width: 44px;
+    height: 14px;
+    left: 40px;
+    top: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: map-get($colors, 'list-contac');
+    &--input {
+      position: absolute;
+      width: 448px;
+      height: 40px;
+      left: 0;
+      top: 18px;
+      padding-left: 40px;
+      border: 1px solid rgba($negro1, 0.2);
+      border-radius: 4px;
+      cursor: pointer;
+      @include border();
+    }
+    &--usuary {
+      position: absolute;
+      left: 15px;
+      top: 32px;
+      z-index: 1;
+      cursor: pointer;
+    }
+    @include iconUsuary();
+  }
+  &__send {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 150px;
+    top: 480px;
+    background: map-get($colors, 'primary');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid map-get($colors, 'primary');
+    color: map-get($colors, 'foot');
+    cursor: pointer;
+  }
+  &__tel {
+    position: absolute;
+    width: 58px;
+    height: 14px;
+    left: 40px;
+    top: 138px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: map-get($colors, 'list-contac');
+    &--contact {
+      position: absolute;
+      left: 15px;
+      top: 32px;
+      z-index: 1;
+      fill: map-get($colors, 'nav-list');
+    }
+    &--input {
+      position: absolute;
+      width: 448px;
+      height: 40px;
+      left: 0;
+      top: 18px;
+      padding-left: 40px;
+      border: 1px solid rgba($negro1, 0.2);
+      border-radius: 4px;
+      @include border();
+    }
+    @include iconContac();
+  }
+}

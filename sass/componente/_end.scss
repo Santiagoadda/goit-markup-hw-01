@@ -1,0 +1,52 @@
+.end {
+  &__form {
+    input {
+      position: absolute;
+      height: 50px;
+      width: 358px;
+      left: 870px;
+      top: 100px;
+      padding-left: 16px;
+      border-radius: 4px;
+      background-color: map-get($colors, 'fondo');
+      color: map-get($colors, 'foot');
+    }
+  }
+  &__input {
+    @include end-input();
+  }
+  &__send {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    left: 1240px;
+    top: 100px;
+    border-radius: 4px;
+    background-color: map-get($colors, 'primary');
+    color: map-get($colors, 'foot');
+    border: 1px solid map-get($colors, 'primary');
+    cursor: pointer;
+  }
+  &__suscrib {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  &__title {
+    position: absolute;
+    height: 16px;
+    width: 275px;
+    left: 870px;
+    top: 58px;
+    border-radius: nullpx;
+    color: map-get($colors, 'fondo2');
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}

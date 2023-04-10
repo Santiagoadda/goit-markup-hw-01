@@ -1,0 +1,36 @@
+.footer {
+  position: absolute;
+  padding-left: 300px;
+  top: 50px;
+  &__icon {
+    position: absolute;
+    color: map-get($colors, 'foot');
+    font-size: 14px;
+    display: flex;
+    padding: 10px;
+  }
+  &__redes {
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 400;
+    background: rgba($blancoA, 0.14);
+    margin-right: 20px;
+    @include icon-li();
+  }
+  &__ul {
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 100px;
+      fill: map-get($colors, 'foot');
+      width: 20px;
+      height: 20px;
+      margin-top: 11px;
+      margin-left: 9.5px;
+    }
+  }
+}

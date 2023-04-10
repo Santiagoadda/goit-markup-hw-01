@@ -1,0 +1,24 @@
+.foot {
+  position: relative;
+  background-color: map-get($colors, 'fondo');
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 50px 0px;
+  &__container {
+    color: map-get($colors, 'list-contac');
+    font-weight: 400;
+    margin-left: 15%;
+  }
+  &__item {
+    color: map-get($colors, 'foot');
+    font-weight: 400;
+    @include hover-focus();
+
+    &--a {
+      @include hover-focus();
+    }
+  }
+  &__ul {
+    font-style: normal;
+  }
+}
