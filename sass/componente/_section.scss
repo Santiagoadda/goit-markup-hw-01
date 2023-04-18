@@ -4,8 +4,11 @@
   &__ul {
     display: flex;
     justify-content: center;
+
+    flex-wrap: wrap;
     gap: 30px;
     color: map-get($colors, 'list-contac');
+    width: 100%;
   }
   &__li {
     display: flex;

@@ -41,6 +41,8 @@
     }
     &--text {
       position: absolute;
+      display: flex;
+      flex-direction: column;
       bottom: 25%;
       left: 0;
       background: rgba($azul, 0.9);

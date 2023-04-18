@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <title>Tarea #7</title>
+    <title>Tarea #8</title>
   </head>
   <body>
     <div class="header-border">
@@ -23,12 +23,12 @@
             <a href="#" class="header__logo">WebStudio</a>
             <ul class="header__ul list">
               <li>
-                <a href="./index.html" class="header__li">Estudio</a>
+                <a href="./index.html" class="header__li header__li--team"
+                  >Estudio</a
+                >
               </li>
               <li>
-                <a href="./portfolio.html" class="header__li header__li--team"
-                  >Portafolio</a
-                >
+                <a href="./portfolio.html" class="header__li">Portafolio</a>
               </li>
               <li><a href="#" class="header__li">Contactos</a></li>
             </ul>
@@ -54,6 +54,22 @@
               >
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              ></path>
+            </svg>
+          </button>
         </div>
       </header>
     </div>
@@ -80,7 +96,21 @@
       <section class="image container">
         <ul class="image__pic">
           <li class="image__picture list">
-            <img src="./images/pantalla.jpg" width="405" alt="pantalla" />
+            <picture>
+              <source
+                srcset="./images/pantalla.jpg, ./images/pantalla-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/pantalla.jpg, ./images/pantalla-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/pantalla.jpg, ./images/pantalla@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/pantalla.jpg" alt="pantalla" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -92,8 +122,22 @@
             <h3 class="image__picture--card">Tecnoduck</h3>
             <p class="image__picture--card1">Sitio-web</p>
           </li>
-          <li class="image__picture">
-            <img src="./images/juego.jpg" width="405" alt="juego" />
+          <li class="image__picture list">
+            <picture>
+              <source
+                srcset="./images/juego.jpg, ./images/juego-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/juego.jpg, ./images/juego-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/juego.jpg, ./images/juego@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/juego.jpg" alt="juego" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -103,11 +147,35 @@
               </p>
             </div>
             <h3 class="image__picture--card">
-              Póster de Nueva Orleans vs Estrella Dorada
+              Póster de Nueva Orleans <br> vs Estrella Dorada br
+              
             </h3>
           </li>
           <li class="image__picture">
-            <img src="./images/restaurante.jpg" width="405" alt="restaurante" />
+            <picture>
+              <source
+                srcset="
+                  ./images/restaurante.jpg,
+                  ./images/restaurante-w@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/restaurante.jpg,
+                  ./images/restaurante-t@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/restaurante.jpg,
+                  ./images/restaurante@2x.jpg 2x
+                "
+                media="(min-width: 480px)"
+              />
+              <img src="./images/restaurante.jpg" alt="restaurante" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -120,7 +188,21 @@
             <p class="image__picture--card1">Aplicaciones</p>
           </li>
           <li class="image__picture">
-            <img src="./images/audifonos.jpg" width="405" alt="audifonos" />
+            <picture>
+              <source
+                srcset="./images/audifonos.jpg, ./images/audifonos-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/audifonos.jpg, ./images/audifonos-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/audifonos.jpg, ./images/audifonos@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/audifonos.jpg" alt="audifonos" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -133,7 +215,21 @@
             <p class="image__picture--card1">Marketing</p>
           </li>
           <li class="image__picture">
-            <img src="./images/caja.jpg" width="405" alt="caja" />
+            <picture>
+              <source
+                srcset="./images/caja.jpg, ./images/caja-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/caja.jpg, ./images/caja-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/caja.jpg, ./images/caja@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/caja.jpg" alt="caja" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -146,7 +242,21 @@
             <p class="image__picture--card1">Aplicaciones</p>
           </li>
           <li class="image__picture">
-            <img src="./images/monitor.jpg" width="405" alt="monitor" />
+            <picture>
+              <source
+                srcset="./images/monitor.jpg, ./images/monitor-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/monitor.jpg, ./images/monitor-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/monitor.jpg, ./images/monitor@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/monitor.jpg" alt="monitor" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -161,7 +271,21 @@
             <p class="image__picture--card1">Sitio-web</p>
           </li>
           <li class="image__picture">
-            <img src="./images/libro.jpg" width="405" alt="libro" />
+            <picture>
+              <source
+                srcset="./images/libro.jpg, ./images/libro-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/libro.jpg, ./images/libro-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/libro.jpg, ./images/libro@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/libro.jpg" alt="libro" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -174,7 +298,21 @@
             <p class="image__picture--card1">Diseño</p>
           </li>
           <li class="image__picture">
-            <img src="./images/tarjeta.jpg" width="405" alt="tarjeta" />
+            <picture>
+              <source
+                srcset="./images/tarjeta.jpg, ./images/tarjeta-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/tarjeta.jpg, ./images/tarjeta-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/tarjeta.jpg, ./images/tarjeta@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/tarjeta.jpg" alt="tarjeta" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -187,7 +325,21 @@
             <p class="image__picture--card1">Marketing</p>
           </li>
           <li class="image__picture">
-            <img src="./images/cp.jpg" width="405" alt="cp" />
+            <picture>
+              <source
+                srcset="./images/cp.jpg, ./images/cp-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/cp.jpg, ./images/cp-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/cp.jpg, ./images/cp@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/cp.jpg" alt="cp" />
+            </picture>
             <div class="image__picture--text">
               <p class="image__picture--p">
                 Tecnoduck es una plataforma de distribución de coronavirus de
@@ -254,9 +406,10 @@
         </div>
         <div class="end">
           <h2 class="end__title">SUSCRÍBASE al boletín informativo</h2>
-          <form class="end__form" action="">
+          <form class="end__form list" action="">
             <label for="email">
               <input
+                class="end__input"
                 type="email"
                 name="email"
                 placeholder="Correo electrónico"
@@ -275,5 +428,50 @@
         </div>
       </address>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contactos</a></li>
+      </ul>
+      <ul class="mobile-list">
+        <li>
+          <a href="mailto:info@devstudio" class="header__li--contac">
+            info@devstudio</a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="tel:+525555296000" class="header__li--contac">
+            +52 55 5529 6000</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-redes">
+        <li><a href="#">Intagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

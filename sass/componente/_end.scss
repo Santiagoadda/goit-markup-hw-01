@@ -1,17 +1,21 @@
 .end {
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+  line-height: 1.7;
   &__form {
-    input {
-      position: absolute;
-      height: 50px;
-      width: 358px;
-      left: 870px;
-      top: 100px;
-      padding-left: 16px;
-      border-radius: 4px;
-      background-color: map-get($colors, 'fondo');
-      color: map-get($colors, 'foot');
-    }
+    position: absolute;
+    height: 50px;
+    width: 358px;
+    left: 0;
+    top: 40px;
+    padding-left: 16px;
+    border-radius: 4px;
+    background-color: var(--fondo);
+    color: var(--foot);
   }
+
   &__input {
     @include end-input();
   }
@@ -19,8 +23,8 @@
     position: absolute;
     height: 50px;
     width: 200px;
-    left: 1240px;
-    top: 100px;
+    left: 1250px;
+    top: 0px;
     border-radius: 4px;
     background-color: map-get($colors, 'primary');
     color: map-get($colors, 'foot');
@@ -39,7 +43,7 @@
     height: 16px;
     width: 275px;
     left: 870px;
-    top: 58px;
+    top: 0;
     border-radius: nullpx;
     color: map-get($colors, 'fondo2');
     font-family: Roboto;
