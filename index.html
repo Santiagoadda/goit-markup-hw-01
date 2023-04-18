@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <title>Tarea #7</title>
+    <title>Tarea #8</title>
   </head>
   <body>
     <header class="header">
@@ -53,6 +53,22 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -158,10 +174,10 @@
         </section>
       </div>
       <script src="./js/modal.js"></script>
-      <section class="main__container container">
+      <section class="container">
         <h2 style="display: none">nuestras ventanas</h2>
         <ul class="main__ul">
-          <li>
+          <li class="main__center">
             <div class="main__rect">
               <svg
                 height="70px"
@@ -179,7 +195,7 @@
               para así desarrollar una solución a su medida.
             </p>
           </li>
-          <li>
+          <li class="main__center">
             <div class="main__rect">
               <svg
                 height="69.99991607666016px"
@@ -198,7 +214,7 @@
               los plazos acordados.
             </p>
           </li>
-          <li>
+          <li class="main__center">
             <div class="main__rect">
               <svg
                 height="70px"
@@ -216,7 +232,7 @@
               aplicación de soluciones.
             </p>
           </li>
-          <li>
+          <li class="main__center">
             <div class="main__rect">
               <svg
                 height="70px"
@@ -255,10 +271,24 @@
       </section>
       <section class="main__gallery">
         <div class="container">
-          <h2>Nuestro Equipo</h2>
+          <h2 class="title">Nuestro Equipo</h2>
           <ul class="main__img list">
             <li class="main__list">
-              <img src="./images/andres.jpg" width="270" alt="andres" />
+              <picture>
+                <source
+                  srcset="./images/andres.jpg, ./images/andres-w@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/andres.jpg, ./images/andres-t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/andres.jpg, ./images/andres@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/andres.jpg" alt="andres" />
+              </picture>
               <h3>Andrés Cubo</h3>
               <p>Diseñador de Productos</p>
               <ul class="main__icon">
@@ -285,7 +315,21 @@
               </ul>
             </li>
             <li class="main__list">
-              <img src="./images/carla.jpg" width="270" alt="carla" />
+              <picture>
+                <source
+                  srcset="./images/carla.jpg, ./images/carla-w@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/carla.jpg, ./images/carla-t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/carla.jpg, ./images/carla@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/carla.jpg" alt="carla" />
+              </picture>
               <h3>Carla Palacios</h3>
               <p>Desarrolladora Frontend</p>
               <ul class="main__icon">
@@ -312,7 +356,21 @@
               </ul>
             </li>
             <li class="main__list">
-              <img src="./images/mario.jpg" width="270" alt="mario" />
+              <picture>
+                <source
+                  srcset="./images/mario.jpg, ./images/mario-w@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mario.jpg, ./images/mario-t@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mario.jpg, ./images/mario@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+              <img src="./images/mario.jpg" alt="mario" />
+              </picture>
               <h3>Mario Dorado</h3>
               <p>Marketing</p>
               <ul class="main__icon">
@@ -338,8 +396,21 @@
                 </li>
               </ul>
             </li>
-            <li class="main__list">
-              <img src="./images/pablo.jpg" width="270" alt="mario" />
+            <li class="main__list"><picture>
+              <source
+                srcset="./images/pablo.jpg, ./images/pablo-w@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/pablo.jpg, ./images/pablo-t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/pablo.jpg, ./images/pablo@2x.jpg 2x"
+                media="(min-width: 480px)"
+              />
+              <img src="./images/pablo.jpg" alt="mario" />
+            </picture>
               <h3>Pablo Mijangos</h3>
               <p>Diseñador IU</p>
               <ul class="main__icon">
@@ -468,8 +539,8 @@
         </div>
         <div class="end">
           <h2 class="end__title">SUSCRÍBASE al boletín informativo</h2>
-          <form class="end__form" action="">
-            <label for="email">
+          <form class="end__form list" action="">
+            <label class="end__input" for="email">
               <input
                 class="end__input"
                 type="email"
@@ -490,5 +561,50 @@
         </div>
       </address>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contactos</a></li>
+      </ul>
+      <ul class="mobile-list">
+        <li>
+          <a href="mailto:info@devstudio" class="header__li--contac">
+            info@devstudio</a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="tel:+525555296000" class="header__li--contac">
+            +52 55 5529 6000</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-redes">
+        <li><a href="#">Intagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

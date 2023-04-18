@@ -4,6 +4,7 @@ body {
   color: map-get($colors, 'nav-list');
   font-size: 14px;
   line-height: 1;
+  overflow-x: hidden;
 }
 ul,
 h1,
@@ -43,6 +44,12 @@ address {
 .link {
   text-decoration: none;
   color: inherit;
+}
+.main__center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .list {
   @include list();

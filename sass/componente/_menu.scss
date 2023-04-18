@@ -1,12 +1,13 @@
 .menu {
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
-  align-content: center;
-  justify-content: space-around;
+
+  flex-direction: column;
   &__btn {
     display: flex;
     justify-content: center;
